@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PickDog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        h1 {
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img {
+            border-radius: 50%;
+        }
+        .header-image {
+            border-radius: 0;
+            width: 100%;
+        }
+        .container {
+            position: relative;
+            width: 55%;
+            padding-top: 55px;
+            margin: 0 auto;
+        }
+        .line { 
+            border-left: 3px solid rgb(0, 0, 0); 
+            padding-left: 10px;
+        }
+        a {
+            color: #7DD27D;
+        }
+        a:visited {
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #50A550;
+        }
+        .row {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .plan {
+            margin-bottom: 50px;
+        }
+        .info {
+            margin-bottom: 100px;
+        }
+        h3 {
+            padding-top: 15px;
+        }
+        .copyright {
+            /*color: #7DD27D;*/
+            font-size: 20px;
+            vertical-align: top;
+        }
+        .question {
+            border-radius: 50%;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 25px;
+            right: 25px;
+            background-color: #fff;
+            padding: 20px;
+            font-size: 21px;
+            width: 20px;
+            height: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 0 0 rgba(125, 187, 125, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                -moz-box-shadow: 0 0 0 0 rgba(125, 187, 125, 0.4);
+                box-shadow: 0 0 0 0 rgba(125, 187, 125, 0.4);
+            }
+            70% {
+                -moz-box-shadow: 0 0 0 10px rgba(125, 187, 125, 0);
+                box-shadow: 0 0 0 10px rgba(125, 187, 125, 0);
+            }
+            100% {
+                -moz-box-shadow: 0 0 0 0 rgba(125, 187, 125, 0);
+                box-shadow: 0 0 0 0 rgba(125, 187, 125, 0);
+            }
+        }
+        p::selection {
+            background: transparent;
+        }
+   </style>
+</head>
+<body>
+    <img class="header-image" src="https://i.imgur.com/PKqhrRH.jpg" alt="header">
+   <section>
+       <div class="container">
+           <div class="subheader">
+               <div>
+                   <img width="100" src="https://i.imgur.com/qjLKWNS.png" alt="icon">
+                   <h1><b>PickDog<span class="copyright">©</span></b></h1>
+               </div>
+               
+               <p>Мы собираемся изменить жизни домашних питомцев и их хозяев.</p>
+               <p class="line">PickDog - собакам от людей. <a href="https://www.instagram.com/esquiresword/">@Andrey Buhovets</a></p>
+               <p>PickDog разрабатывается командой из двух человек. Проект основан и на данный момент развивается в Минске. За процессом разработки вы сможете следить на <a href="#" class="pick">pickdog.app/devnews</a>.</p>
+                <div class="row align-items-start" >
+                    <div class="col">
+                      <img src="https://i.imgur.com/7X7H6Nu.jpg" alt="Andrey" width="200px">
+                      <h3>Андрей Буховец</h3>
+                      <a href="https://www.instagram.com/esquiresword/">@esquiresword</a>
+                      <p>Автор идеи, Python Back-End разработчик.</p>
+                    </div>
+                    <div class="col">
+                      <img src="https://i.imgur.com/NR04mZY.jpg" alt="Mitya"  width="200px">
+                      <h3>Митя Кохан</h3>
+                      <a href="https://www.instagram.com/mitya188/">@mitya188</a>
+                      <p>Автор идеи, React Front-End разработчик.</p>
+                    </div>
+                </div>
+                <div class="plan">
+                    <h2>Типовые планы:</h2>
+                    <div class="preparation">
+                        <p>📋 <a href="">План подготовки</a></p>
+                    </div>
+                    <div class="development">
+                        <p>👨‍💻 <a href="">План разработки</a></p>
+                    </div>
+                </div>
+                <div class="info">
+                    <h2>Как мы собираемся всё изменить?🤔</h2>
+                    <p>Всё рассказали на уже готовой страничке "<a href="">О нас</a>"!</p>
+                </div>
+           </div>
+       </div>
+   </section>
+
+    <a href="#"><div class="question"><b>?</b></div></a>
+
+</body>
+</html>
